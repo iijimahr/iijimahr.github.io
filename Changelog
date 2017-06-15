@@ -1,4 +1,4 @@
-www-space上の個人ページ
+github.ioの個人ページ
 
 To Do
 	* bootstrap:
@@ -26,3 +26,8 @@ To Do
 	(3) インラインフレームとcgi。
 	<iframe>の見た目があれだが。
 	フレームワークとの親和性に課題。
+
+2017.06.15
+	* 作成:
+	bitbucketのページからコピー。
+	CVのPDFを追加。
