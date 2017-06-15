@@ -3,31 +3,18 @@ github.ioの個人ページ
 To Do
 	* bootstrap:
 	利用者多いし良いかも。
-	* Material UI:
-	Google製。難易度高い。
-	* Web Start Kit:
-	Google製。
-	* pure:
-	bootstrapより軽い。
-	やっぱ軽いのが良いか。
-	* 必要最低限:
-	業績はPublicationのみなら複雑なことはしなくて良い。
 	* 業績:
 	CSVファイルから業績を出力したい。
-	(1) Ajex的なjavascript。
-	少し複雑。少しセキュリティが怖い。
-	jQueryの使用も可。
-	HTML5フレームワークとの親和性が良さそう。
-	(2) HTMLに整形するpythonスクリプトを作成。
-	アップロード時に手元で整形。
-	前後のHTMLは別ファイルから読みこめば良い。
-	HTMLファイル中にキーワードを入れて、
-	そこをsedで置換することも出来る。
-	(3) インラインフレームとcgi。
-	<iframe>の見た目があれだが。
-	フレームワークとの親和性に課題。
+	HTMLに整形するpythonスクリプトを作成。
 
 2017.06.15
 	* 作成:
 	bitbucketのページからコピー。
 	CVのPDFを追加。
+	* side-menu.css:
+	list(ul, ol; ul li, ol li)の設定を追加。
+	paddingのみ。
+	* side-menu.css:
+	メニューの色を調節。
+	ボーダーの有無を調節。
+	参考: https://www.materialui.co/flatuicolors
