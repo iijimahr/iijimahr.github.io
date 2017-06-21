@@ -42,17 +42,28 @@
         </div>
       </div>
 
-      <!-- Main -->
-      {% block main %}
-      {% endblock %}
-    </div>
+      <div id="main">
+	<!-- Main: Header -->
+	<div class="header">
+	  {% block header %}
+	  {% endblock %}
+	</div>
 
-    <div class="footer">
-      <small>
-	<p class="copyright">
-	  &copy; 2017 Haruhisa Iijima All rights reserved.
-	</p>
-      </small>
+	<!-- Main: Content -->
+	<div class="content">
+	  {% block content %}
+	  {% endblock %}
+	</div>
+
+	<!-- Footer -->
+	<div class="footer">
+	  <small>
+	    <p class="copyright">
+	      &copy; 2017 Haruhisa Iijima All rights reserved.
+	    </p>
+	  </small>
+	</div>
+      </div>
     </div>
 
     <script src="js/ui.js"></script>
