@@ -116,6 +116,11 @@ The content `<div>` is where all your content goes.
     color: var(--subhead-color);
 }
 
+.footer {
+    /* margin: 0 auto; */
+    /* max-width: 800px; */
+    text-align: center;
+}
 
 /*
 The `#menu` `<div>` is the parent `<div>` that contains the `.pure-menu` that
