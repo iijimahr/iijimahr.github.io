@@ -1,16 +1,22 @@
 #!/usr/bin/env python
 from jinja2 import Template, Environment, FileSystemLoader
 
-fname_main = 'index'
+####
+#### compile html by the template engine Jinja2
+####
+def compile_html(fname):
+    env = Environment(loader=FileSystemLoader('.'), trim_blocks=False)
+    template = env.get_template(fname+'_tpl.html')
+    disp_text = template.render()
 
-env = Environment(loader=FileSystemLoader('.'), trim_blocks=False)
-template = env.get_template(fname_main+'_tpl.html')
-disp_text = template.render()
+    # output file
+    f = open('../'+fname+'.html', 'w')
+    f.write(disp_text)
+    f.close()
 
-# # stdout
-# print(disp_text)
-
-# output file
-f = open('../'+fname_main+'.html', 'w')
-f.write(disp_text)
-f.close()
+####
+#### main
+####
+compile_html('index')
+compile_html('presentations')
+compile_html('publications')

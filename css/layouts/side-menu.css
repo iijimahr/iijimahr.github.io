@@ -117,9 +117,10 @@ The content `<div>` is where all your content goes.
 }
 
 .footer {
-    /* margin: 0 auto; */
-    /* max-width: 800px; */
-    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: right;
+    border-top: 1px solid #eee;
 }
 
 /*
