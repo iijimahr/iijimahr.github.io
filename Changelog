@@ -1,5 +1,27 @@
 github.ioの個人ページ
 
+Done
+	* JQuery:
+	pythonじゃなくjsでできないかと試したが、
+	Chromeで上手く表示出来なかった。
+	safariは上手くいった。
+	やはり静的に生成するほうが安全そう。
+	* Pythonの利用:
+	HTMLテンプレートを作って
+	メニュー部分とメインコンテンツを分離。
+Now
+	* ディレクトリ構造:
+	css: cssファイル
+	js: javascriptファイル
+	src: 完成したHTMLファイルを生成するためのソース。
+	* コンパイル方法:
+	Makefileを書く。
+	これで完全なHTMLファイルを静的に生成。
+	* 更新方法:
+	./update.sh
+	Githubへのアップロード。
+	* デザインの変更:
+	フッターの追加。
 To Do
 	* bootstrap:
 	利用者多いし良いかも。
