@@ -7,6 +7,17 @@ Now
 	* 出版:
 	dissertationも。
 To Do
+	* Github.io:
+	Jekyllの設定で./site/以下を公開するように出来るのではないか。
+	ドキュメントルートの変更。
+	gitでsubtreeを作るのが一つの方法。gh-pages。
+	ん、githubのsettingで出来るっぽい。
+	./doc/を作れば良さそう。
+	* 目次:
+	*_tpl.htmlを探して勝手に構造化させる。
+	compileも*_tpl.htmlを探して実行。
+	しかし、それだとテスト用の*_tpl.htmlを作った時に面倒か。
+	むしろ*_tpl.html形式などでサイトの構造を用に記述すべきか。
 	* 目次:
 	フッタに目次を付ける。
 	iphoneで見た時にメニューバーが見えない。
