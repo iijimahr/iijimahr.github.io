@@ -7,12 +7,6 @@ Now
 	* 出版:
 	dissertationも。
 To Do
-	* Github.io:
-	Jekyllの設定で./site/以下を公開するように出来るのではないか。
-	ドキュメントルートの変更。
-	gitでsubtreeを作るのが一つの方法。gh-pages。
-	ん、githubのsettingで出来るっぽい。
-	./doc/を作れば良さそう。
 	* 目次:
 	*_tpl.htmlを探して勝手に構造化させる。
 	compileも*_tpl.htmlを探して実行。
@@ -49,6 +43,18 @@ To Do
 	CVとHomeを独立。Homeには画像を何か置く。
 	アクセス解析。普通にjsのGoogleアナリティクスで良さそう。
 	robots.txtでChangelogとかsrcを読まないように。jekyllでやるべき？
+Future
+	* Github.io:
+	ドキュメントルートの変更。
+	gitでsubtreeを作るのが一つの方法。gh-pages。
+	ん、githubのsettingで出来るっぽい。
+	./doc/を作れば良さそう。
+	あー、でもユーザーページはmasterのルートからじゃないとだめっぽい。
+	プロジェクトページならいけるっぽいが。
+	* 勉強:
+	JekyllやPelikanを使ってみる。
+	そのままJekyllでやるのも良いし、
+	自分のコードをよくするために使っても良い。
 
 2017.06.22	d001
 	* JQuery:
