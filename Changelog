@@ -2,11 +2,9 @@ github.ioの個人ページ
 
 Done
 Now
-	* 業績:
-	hinode-7の年が書いてない。
-	* 出版:
-	dissertationも。
 To Do
+	* 出版:
+	dissertationも載せる。
 	* 目次:
 	*_tpl.htmlを探して勝手に構造化させる。
 	compileも*_tpl.htmlを探して実行。
@@ -51,11 +49,18 @@ Future
 	./doc/を作れば良さそう。
 	あー、でもユーザーページはmasterのルートからじゃないとだめっぽい。
 	プロジェクトページならいけるっぽいが。
+	どうやらCNAMEを置くと独自ドメインにも出来るっぽい。
+	時期を見て独自ドメインを取得してプロジェクトページにしようか。
 	* 勉強:
 	JekyllやPelikanを使ってみる。
 	そのままJekyllでやるのも良いし、
 	自分のコードをよくするために使っても良い。
 
+2017.09.07	d002
+	* presentations_tpl.html:
+	hinode-7の年が書いてないのを追加。
+	* publications_tpl.html:
+	3次元ジェット論文を追加。
 2017.06.22	d001
 	* JQuery:
 	pythonじゃなくjsでできないかと試したが、
