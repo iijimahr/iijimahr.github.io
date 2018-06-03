@@ -1,29 +1,19 @@
 github.ioの個人ページ
 
 Done
-	* src/publications_tpl.html:
-	早川くん論文を追加。
-	* src/presentations_tpl.html:
-	海外発表を追加。
-	ASTRONUM
-	JpGU
-	DKIST
-	Cycle予測
-	
 Now
 To Do
 	* CV:
 	Employment/Curriculum_VitaeのPDF。
 	* 共著論文:
 	堀田さん
-	早川くん
-	* small ws:
+	* 小さい研究会:
 	SGEPSSいれたっけ？
 	天文台のflux emergence ws
 	名大のcycle prediction ws
 	IAC/ESTミーティング
 	* 講義:
-	シミュレーションSS2017
+	SS2017
 	* outreach:
 	最前線ツアー。
 	講義とまとめるべき？
@@ -86,6 +76,36 @@ Future
 	そのままJekyllでやるのも良いし、
 	自分のコードをよくするために使っても良い。
 
+2018.06.04	d005
+	* all:
+	pure-layout-marketingベースに変更。
+	そこそこ良さそうだが時間切れ。
+	tucked-menuの方がシンプル。
+	というか、もうtuckedしなくても良い気がしてきた。
+	メニューだけlayout-marketingを真似たい。
+	とりあえずd003に戻す。
+2018.06.04	d004
+	* js/tucked-menu.js:
+	tucked-menu用のjavascript。
+	* css/tucked-menu.css:
+	tucked-menu用のCSS。
+	* src/template.html:
+	tucked-menu用のテンプレート。
+	* css/tucked-menu.css:
+	調整中。
+	メニューが左に寄り過ぎ。
+	あんまりよくないかも。
+2018.06.04	d003
+	* src/template.html:
+	Copyrightを更新。
+	* src/publications_tpl.html:
+	早川くん論文を追加。
+	* src/presentations_tpl.html:
+	海外発表を追加。
+	ASTRONUM
+	JpGU
+	DKIST CSP WS
+	Cycle予測WS
 2017.09.07	d002
 	* presentations_tpl.html:
 	hinode-7の年が書いてないのを追加。
