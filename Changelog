@@ -1,6 +1,15 @@
 github.ioの個人ページ
 
 Done
+	* src/publications_tpl.html:
+	早川くん論文を追加。
+	* src/presentations_tpl.html:
+	海外発表を追加。
+	ASTRONUM
+	JpGU
+	DKIST
+	Cycle予測
+	
 Now
 To Do
 	* CV:
