@@ -2,10 +2,34 @@ github.ioの個人ページ
 
 Done
 Now
+	* Bootstrap4に移行:
+	example/coverベース。
+	かなり気に入ってる。
 To Do
+	* メニュー:
+	上と下にあるし、
+	メニューが増えても自動で調整したい。
+	jinja2のfor文を使う。
+	active等もfor文中のif文で設定する。
+	* CSSの調整:
+	<div class="header">
+	{% block header %}
+	{% endblock %}
+	</div>
+	のようにすれば、わざわざ<p class="lead">や
+	<ul class="list">等でclassを指定せずに済むようにする。
+	* 業績:
+	CSVファイルから業績を出力したい。
+	HTMLに整形するpythonスクリプトを作成。
 	* CV:
+	Contact detailsなど正式っぽいやつを作る。
+	* PDF版CV:
 	Employment/Curriculum_VitaeのPDF。
+	PDFとHTMLを同時に生成できるようにしたい。
+	業績欄だけ同時生成でも良い。
+	ダウンロードボタンはbootstrapのボタンを使う。
 	* 共著論文:
+	横山先生
 	堀田さん
 	* 小さい研究会:
 	SGEPSSいれたっけ？
@@ -23,21 +47,11 @@ To Do
 	* 日本語発表・日本語論文:
 	ちゃんと載せたほうが良い。
 	最近記録を忘れていて大変。
-	* 出版:
-	dissertationも載せる。
 	* 目次:
 	*_tpl.htmlを探して勝手に構造化させる。
 	compileも*_tpl.htmlを探して実行。
 	しかし、それだとテスト用の*_tpl.htmlを作った時に面倒か。
 	むしろ*_tpl.html形式などでサイトの構造を用に記述すべきか。
-	* 目次:
-	フッタに目次を付ける。
-	iphoneで見た時にメニューバーが見えない。
-	* 業績:
-	CSVファイルから業績を出力したい。
-	HTMLに整形するpythonスクリプトを作成。
-	* レイアウト:
-	pureの何分の一とかのグリッド機能は使えない・使わないのか。
 	* 多言語対応:
 	多分、テンプレートエンジンのif文を使うと簡単。
 	Python内の変数のlang ja/enで区別。
@@ -50,17 +64,14 @@ To Do
 	ちゃんとやったほうが良い。
 	ISEEのリンクにも登録してもらう。
 	日本語サイトもあった方が日本語のGoogle検索にひっかかるらしい。
-	* 静的サイトジェネレータの利用:
-	RubyのJekyllとかPythonのPelicanとか。
-	ブログも自分で作れてMarkdownで書けるし便利。
 	* その他:
-	Homeの副題を揃える。Haruhisa Iijima, Nagoya University。Japanはいらん。
-	twitterとかfacebook、githubのアカウント。左側のメニューバーの下の方が寂しい。
+	twitterとかfacebook、githubのアカウント。
+	左側のメニューバーの下の方が寂しい。
 	my research。Brandenburgとか楽しい。
 	業績の自分の名前を目立たせる。題名を斜め or 赤に。
 	CVとHomeを独立。Homeには画像を何か置く。
 	アクセス解析。普通にjsのGoogleアナリティクスで良さそう。
-	robots.txtでChangelogとかsrcを読まないように。jekyllでやるべき？
+	robots.txtでChangelogとかsrcを読まないように。
 Future
 	* Github.io:
 	ドキュメントルートの変更。
@@ -76,6 +87,11 @@ Future
 	そのままJekyllでやるのも良いし、
 	自分のコードをよくするために使っても良い。
 
+2018.06.11	d007
+	* バックアップ
+2018.06.04	d006
+	* 戻した:
+	d003とほぼ同じ。
 2018.06.04	d005
 	* all:
 	pure-layout-marketingベースに変更。

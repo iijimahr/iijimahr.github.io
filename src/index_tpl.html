@@ -1,18 +1,25 @@
 {% extends "template.html" %}
 
+{% set active_page = "index" %}
+
 {% block title %}
 Home
 {% endblock %}
 
 {% block header %}
-<h1>Haruhisa Iijima</h1>
-<h2>Post-Doctoral Researcher, Nagoya University</h2>
+<h1 class="cover-heading">Home | Haruhisa Iijima</h1>
+<p class="lead">
+  Welcome to my personal website.<br>
+  I am Haruhisa Iijima,
+  a post-doctoral researcher
+  at Nagoya University, Japan.
+</p>
 {% endblock %}
 
 {% block content %}
 <!-- About Me -->
-<h2 class="content-subhead">About Me</h2>
-<ul>
+<h2>About Me</h2>
+<ul class="list">
   <li>
     <b>Name:</b>
     Haruhisa IIJIMA (Given, FAMILY)
@@ -52,10 +59,10 @@ Home
 </ul>
 
 <!-- Career -->
-<h2 class="content-subhead">Career</h2>
-<ul>
+<h2>Career</h2>
+<ul class="list">
   <li>
-    <b>Apr. 2016–Present:</b>
+    <b>Apr. 2016-Present:</b>
     Post-doctoral researcher,
     Division for Integrated Studies,
     Institute for Space-Earth Environmental Research,
@@ -64,21 +71,21 @@ Home
 </ul>
 
 <!-- Education -->
-<h2 class="content-subhead">Education</h2>
-<ul>
+<h2>Education</h2>
+<ul class="list">
   <li>
-    <b>Apr. 2013–Mar. 2016:</b>
+    <b>Apr. 2013-Mar. 2016:</b>
     Ph. D. (March 2016),
     Department of Earth and Planetary Science,
     Graduate School of Science,
     The University of Tokyo,
-    "Numerical Studies of Chromospheric Jets”
+    "Numerical Studies of Chromospheric Jets",
     <a href="http://adsabs.harvard.edu/abs/2016PhDT.........5I">
       ADS
     </a>
   </li>
   <li>
-    <b>Apr. 2011–Mar. 2013:</b>
+    <b>Apr. 2011-Mar. 2013:</b>
     Master of Science (March 2013),
     Department of Earth and Planetary Science,
     Graduate School of Science,
@@ -87,7 +94,7 @@ Home
     and Magnetic Field by Radiative Magnetohydrodynamic Simulation"
   </li>
   <li>
-    <b>Apr. 2007–Mar. 2011:</b>
+    <b>Apr. 2007-Mar. 2011:</b>
     Bachelor of Science (March 2011),
     Department of Earth and Planetary Science,
     The University of Tokyo
@@ -95,10 +102,9 @@ Home
 </ul>
 
 <!-- Honors & Awards -->
-<h2 class="content-subhead">Honors & Awards</h2>
-<ol>
+<h2>Honors & Awards</h2>
+<ol class="list">
   <li>
-    <b>2015:</b>
     Student Outstanding Presentation Award,
     Japan Geoscience Union Meeting 2015 
   </li>

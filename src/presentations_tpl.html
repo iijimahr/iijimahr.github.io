@@ -1,4 +1,6 @@
-{% extends "template.html" %} {# 親テンプレートを指定 #}
+{% extends "template.html" %}
+
+{% set active_page = "presentations" %}
 
 {% block title %}
 Presentations
@@ -6,13 +8,12 @@ Presentations
 
 {% block header %}
 <h1>Presentations</h1>
-<h2>Haruhisa Iijima, Nagoya University</h2>
 {% endblock %}
 
 {% block content %}
 <!-- Presentations (International) -->
-<h2 class="content-subhead">Presentations (International)</h2>
-<ol>
+<h2>Presentations (International)</h2>
+<ol class="list">
   <li>
     H. Iijima and T. Yokoyama,
     "Radiation MHD Simulations on Solar Chromospheric Jets",
@@ -32,13 +33,13 @@ Presentations
     "Insight on chromosphere dynamics from numerical simulations
     - Expected signatures of spicule formation and evolution",
     DKIST Critical Science Plan Workshop,
-    2017, Nagoya, Japan
+    2017, Nagoya, Japan (Talk)
   </li>
   <li>
     H. Iijima, H. Hotta, S. Imada, K. Kusano, and D. Shiota,
     "Plateau of polar field and cycle prediction",
     Solar Cycle 25 Prediction Workshop,
-    2017, Nagoya, Japan
+    2017, Nagoya, Japan (Talk)
   </li>
   <li>
     H. Iijima,
@@ -131,4 +132,8 @@ Presentations
     Hinode-6 Science Meeting, 2012, St. Andreews, UK (Poster)
   </li>
 </ol>
+
+<!-- Presentations (Domestic) -->
+
+<!-- Presentations (Outreach) -->
 {% endblock %}

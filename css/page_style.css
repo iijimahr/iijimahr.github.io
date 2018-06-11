@@ -1,0 +1,148 @@
+/*
+ * Globals
+ */
+
+:root {
+    --body-color: #777;
+    --body-bg-color: #fff;
+    --a-color: #c00;
+    --btn-color: #fff;
+    --btn-bg-color: #777;
+    --masthead-color: #777;
+    --masthead-bb-color: #777;
+    --masthead-ac-color: #777;
+    --masthead-ac-bb-color: #777;
+    --mastfoot-color: #777;
+    --masthead-contact-color: #c00;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: var(--a-color);
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: var(--btn-color);
+    background-color: var(--btn-bg-color);
+    border: .05rem solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    /* height: 100%; */
+    background-color: var(--body-bg-color);
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    color: var(--body-color);
+}
+
+.cover-container {
+    max-width: 42em;
+}
+
+main h1 {
+    margin: 2.5em 0 0.5em 0;
+}
+
+main h2 {
+    margin: 1.5em 0 0.5em 0;
+    font-weight: 300;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+    margin-bottom: 2rem;
+}
+
+.masthead-brand {
+    margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: var(--masthead-color);
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: var(--masthead-bb-color);
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: var(--masthead-ac-color);
+    border-bottom-color: var(--masthead-ac-bb-color);
+}
+
+@media (min-width: 48em) {
+    .masthead-brand {
+	float: left;
+    }
+    .nav-masthead {
+	float: right;
+    }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+    /* padding: 0 1.5rem; */
+    padding-top: 1.0em;
+}
+
+.cover .btn-lg {
+    /* padding: .75rem 1.25rem; */
+    font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+    padding-top: 3.0em;
+    color: var(--mastfoot-color);
+    text-align: center;
+}
+
+
+
+/*
+ * List
+ */
+ul.list {
+    padding: 0.5em 0.0em 0.5em 0.0em;
+    list-style-type: none;
+}
+
+ol.list {
+    padding: 0.5em 0.0em 0.5em 1.0em;
+}
+
+.list li {
+    padding: 0.25em 0.0em;
+}

@@ -1,4 +1,6 @@
-{% extends "template.html" %} {# 親テンプレートを指定 #}
+{% extends "template.html" %}
+
+{% set active_page = "publications" %}
 
 {% block title %}
 Publications
@@ -6,13 +8,12 @@ Publications
 
 {% block header %}
 <h1>Publications</h1>
-<h2>Haruhisa Iijima, Nagoya University</h2>
 {% endblock %}
 
 {% block content %}
 <!-- Refereed Publications (Corresponding Author) -->
-<h2 class="content-subhead">Refereed Publications (Corresponding Author)</h2>
-<ol>
+<h2>Refereed Publications (Corresponding Author)</h2>
+<ol class="list">
   <li>
     H. Iijima, H. Hotta, S. Imada, K. Kusano, and D. Shiota, 2017,
     "Improvement of solar cycle prediction:
@@ -62,9 +63,10 @@ Publications
     </a>
   </li>
 </ol>
+
 <!-- Refereed Publications (Co-Author) -->
-<h2 class="content-subhead">Refereed Publications (Co-Author)</h2>
-<ol>
+<h2>Refereed Publications (Co-Author)</h2>
+<ol class="list">
   <li>
     H. Hayakawa, K. Iwahashi, M. Fujiyama, T. Kawai,
     S. Toriumi, H. Hotta, H. Iijima, S. Imada,
