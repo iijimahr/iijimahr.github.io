@@ -67,6 +67,17 @@ main h2 {
 }
 
 /*
+ * Main: Header
+ */
+
+.main_header p {
+    /* same as .lead in bootstrap.min.css */
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+
+/*
  * Main: Content
  */
 
