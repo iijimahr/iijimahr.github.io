@@ -2,15 +2,7 @@ github.ioの個人ページ
 
 Done
 Now
-	* Bootstrap4に移行:
-	example/coverベース。
-	かなり気に入ってる。
 To Do
-	* メニュー:
-	上と下にあるし、
-	メニューが増えても自動で調整したい。
-	jinja2のfor文を使う。
-	active等もfor文中のif文で設定する。
 	* CSSの調整:
 	<div class="header">
 	{% block header %}
@@ -87,6 +79,15 @@ Future
 	そのままJekyllでやるのも良いし、
 	自分のコードをよくするために使っても良い。
 
+2018.06.11	d008
+	* Bootstrap4に移行:
+	example/coverベース。
+	かなり気に入ってる。
+	* メニュー:
+	上と下にあるし、
+	メニューが増えても自動で調整。
+	jinja2のfor文を使う。
+	active等もfor文中のif文で設定する。
 2018.06.11	d007
 	* バックアップ
 2018.06.04	d006
