@@ -52,12 +52,16 @@
       <main role="main" class="inner cover">
 
 	<!-- Main: Header -->
-	{% block header %}
-	{% endblock %}
+	<div class="main_header">
+	  {% block main_header %}
+	  {% endblock %}
+	</div>
 
 	<!-- Main: Content -->
-	{% block content %}
-	{% endblock %}
+	<div class="main_content">
+	  {% block main_content %}
+	  {% endblock %}
+	</div>
 
 	<!-- Main: Back to top -->
 	<p style="text-align: right"><a href="#">Back to top</a></p>

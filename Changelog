@@ -3,13 +3,6 @@ github.ioの個人ページ
 Done
 Now
 To Do
-	* CSSの調整:
-	<div class="header">
-	{% block header %}
-	{% endblock %}
-	</div>
-	のようにすれば、わざわざ<p class="lead">や
-	<ul class="list">等でclassを指定せずに済むようにする。
 	* 業績:
 	CSVファイルから業績を出力したい。
 	HTMLに整形するpythonスクリプトを作成。
@@ -79,6 +72,16 @@ Future
 	そのままJekyllでやるのも良いし、
 	自分のコードをよくするために使っても良い。
 
+2018.06.12	d009
+	* CSSの調整:
+	<div class="header">
+	{% block header %}
+	{% endblock %}
+	</div>
+	のようにすれば、わざわざ<p class="lead">や
+	<ul class="list">等でclassを指定せずに済むようになる。
+	* presentation_tpl.html:
+	Shift-JISの空白が混ざってたので削除。
 2018.06.11	d008
 	* Bootstrap4に移行:
 	example/coverベース。
