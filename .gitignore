@@ -1,1 +1,8 @@
+# media files
+!*.mp4
+!*.jpg
+!*.jpeg
+!*.png
+!*.eps
+!*.ps
 !*.pdf
