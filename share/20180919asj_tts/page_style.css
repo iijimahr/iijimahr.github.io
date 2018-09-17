@@ -8,8 +8,7 @@ body {
     max-width: 48rem;
     font-size: 1.2rem;
     line-height: 2.0;
-    /* font-family: Roboto, Arial, sans-serif; */
-    font-family: helvetica, arial, 'hiragino kaku gothic pro', meiryo, 'ms pgothic', sans-serif;
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 }
 h1 {
     font-size: 1.9rem;
