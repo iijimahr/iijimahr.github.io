@@ -1,0 +1,25 @@
+:root {
+    --body-color: #777;
+    --body-bg-color: #fff;
+}
+
+html {
+    background-color: #fff;
+    color: #777;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 50rem;
+}
+
+video {
+    width: 100%;
+}
+
+@media (max-width: 50rem) {
+    body {
+	margin: 0 1rem;
+	max-width: 100%;
+    }
+}
