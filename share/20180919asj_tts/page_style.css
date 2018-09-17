@@ -1,13 +1,15 @@
+/* html */
 html {
     background-color: #fff;
     color: #777;
 }
 
+/* body */
 body {
     margin: 0 auto;
     max-width: 48rem;
     font-size: 1.2rem;
-    line-height: 2.0;
+    line-height: 1.6;
     font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
 }
 h1 {
@@ -16,6 +18,10 @@ h1 {
 h2 {
     font-size: 1.5rem;
 }
+h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
 @media (max-width: 50rem) {
     body {
 	margin: 0 1rem;
@@ -23,22 +29,35 @@ h2 {
 	font-size: 1.0rem;
     }
     h1 {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
     }
     h2 {
 	font-size: 1.2rem;
     }
 }
 
+/* video */
 video {
     margin: 0.5rem auto;
     width: 100%;
 }
 
+/* link */
 a {
     text-decoration: none;
     color: #c00;
 }
 a:hover {
     text-decoration: underline;
+}
+
+/* list */
+ul {
+    display: -webkit-flex;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+li {
+    padding: 0.5rem 1.0rem 0.5rem 0;
 }
