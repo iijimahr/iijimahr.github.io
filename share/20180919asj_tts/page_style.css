@@ -10,19 +10,24 @@ body {
     line-height: 2.0;
     font-family: Roboto, Arial, sans-serif;
 }
+h1 {
+    font-size: 1.9rem;
+}
+h2 {
+    font-size: 1.5rem;
+}
 @media (max-width: 50rem) {
     body {
 	margin: 0 1rem;
 	max-width: 100%;
+	font-size: 1.0rem;
     }
-}
-
-h1 {
-    font-size: 1.9rem;
-}
-
-h2 {
-    font-size: 1.5rem;
+    h1 {
+	font-size: 1.5rem;
+    }
+    h2 {
+	font-size: 1.2rem;
+    }
 }
 
 video {
