@@ -55,7 +55,7 @@ a:hover {
 ul {
     display: -webkit-flex;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style: none;
     padding: 0;
 }
