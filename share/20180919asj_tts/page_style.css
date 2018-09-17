@@ -8,6 +8,7 @@ body {
     max-width: 48rem;
     font-size: 1.2rem;
     line-height: 2.0;
+    font-family: Roboto, Arial, sans-serif;
 }
 @media (max-width: 50rem) {
     body {
