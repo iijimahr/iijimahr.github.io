@@ -1,15 +1,24 @@
 github.ioの個人ページ
 
 Done
-	* src/template.html:
-	新しいtmp以下のテンプレートを利用。
-	古いbootstrapのいろいろは削除。
-	assets、dist。
 
 Now
 To Do
-	* 動画:
+	* src/gallery_tpl.html:
 	出版論文の動画は載せてみたい。
+	論文ごとにするか、動画毎にするか。
+	動画毎の方が論文に関係ない動画も載せられる。
+	論文ごとだと論文の図とかも紹介しやすい。
+	detailsやjsで折りたたみにするべきか。
+	detailsは押した後に履歴が残る感じなのが気持ち悪い。
+	active_pageがまだ"index"のまま。
+	ちゃんとやったら"gallery"に変える。
+	その際はtemplate.htmlも編集。
+	BrandenburgのResearch Highlightとか参考にすべきか。
+	https://www.nordita.org/~brandenb/highlights/
+	* src:
+	index、publicationsなどをcompile.pyで指定。
+	それで被コンパイルファイル・メニュー両方をコントロール。
 	* bootstrap-reboot.css:
 	page_style.cssにまとめるべきかも。
 	scssで一つのファイルを生成するようにする。
@@ -82,6 +91,13 @@ Future
 	そのままJekyllでやるのも良いし、
 	自分のコードをよくするために使っても良い。
 
+2018.09.22	d011
+	* src/template.html:
+	新しいtmp以下のテンプレートを利用。
+	古いbootstrapのいろいろは削除。
+	assets、dist。
+	* src/gallery_tpl.html:
+	とりあえず作ってみた。
 2018.09.22	d010
 	* share/20180919asj_tts:
 	MP4ファイルの削除。

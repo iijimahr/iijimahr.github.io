@@ -20,3 +20,4 @@ def compile_html(fname):
 compile_html('index')
 compile_html('presentations')
 compile_html('publications')
+compile_html('gallery')
