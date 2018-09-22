@@ -8,11 +8,11 @@ Done
 
 Now
 To Do
+	* 動画:
+	出版論文の動画は載せてみたい。
 	* bootstrap-reboot.css:
 	page_style.cssにまとめるべきかも。
 	scssで一つのファイルを生成するようにする。
-	* 動画:
-	出版論文の動画は載せてみたい。
 	* 業績:
 	CSVファイルから業績を出力したい。
 	HTMLに整形するpythonスクリプトを作成。
