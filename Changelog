@@ -6,6 +6,10 @@ Done
 
 Now
 To Do
+	* favicon:
+	GTmetrixでリクエストを2回してる。
+	何かと思ったらfaviconが無いと言われた。
+	あったほうがいいんだろうか。
 	* src/gallery_tpl.html:
 	出版論文の動画は載せてみたい。
 	論文ごとにするか、動画毎にするか。
