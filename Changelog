@@ -1,6 +1,8 @@
 github.ioの個人ページ
 
 Done
+	* src/template.html:
+	htmlにcssをインライン展開。
 
 Now
 To Do
