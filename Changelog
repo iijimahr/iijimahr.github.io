@@ -19,8 +19,7 @@ To Do
 	* src:
 	index、publicationsなどをcompile.pyで指定。
 	それで被コンパイルファイル・メニュー両方をコントロール。
-	* bootstrap-reboot.css:
-	page_style.cssにまとめるべきかも。
+	* css/page_style.min.css:
 	scssで一つのファイルを生成するようにする。
 	* 業績:
 	CSVファイルから業績を出力したい。
@@ -92,6 +91,8 @@ Future
 	自分のコードをよくするために使っても良い。
 
 2018.09.22	d011
+	* css/page_style.min.css:
+	bootstrap-reboot.min.cssとpage_style.cssをcatでまとめた。
 	* src/template.html:
 	新しいtmp以下のテンプレートを利用。
 	古いbootstrapのいろいろは削除。
