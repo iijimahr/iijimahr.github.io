@@ -1,161 +1,134 @@
-/*
- * Globals
- */
-
+/* Globals */
 :root {
-    --body-color: #777;
-    --body-bg-color: #fff;
+    --fg-color: #777;
+    --bg-color: #fff;
     --a-color: #c00;
-    --btn-color: #fff;
-    --btn-bg-color: #777;
-    --masthead-color: #777;
-    --masthead-bb-color: #777;
-    --masthead-ac-color: #777;
-    --masthead-ac-bb-color: #777;
-    --mastfoot-color: #777;
-    --masthead-contact-color: #c00;
 }
 
+/* Heading */
+h1, h2, h3, h4, h5, h6 {
+    font-family: inherit;
+    font-weight: 500;
+    color: inherit;
+}
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
 
-/* Links */
-a,
-a:focus,
-a:hover {
+/* Link */
+a, a:focus, a:hover {
     color: var(--a-color);
+    text-decoration: none;
 }
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-    color: var(--btn-color);
-    background-color: var(--btn-bg-color);
-    border: .05rem solid #fff;
+/* video, image */
+video, img {
+    margin: 0.5rem auto;
+    width: 100%;
 }
 
+/* HTML, Body */
+html, body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+}
 
-/*
- * Base structure
- */
-
-html,
+/* Body */
 body {
-    background-color: var(--body-bg-color);
+    margin: 0 auto;
+    max-width: 40rem;
+}
+@media (max-width: 42rem) {
+    body {
+	margin: 0 1rem;
+	max-width: 100%;
+    }
 }
 
-body {
-    display: -ms-flexbox;
+/* Header */
+header {
+    display: -webkit-flex;
     display: flex;
-    color: var(--body-color);
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+header h3 {
+    margin: auto 0;
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+header nav {
+    margin: auto 0;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+header a {
+    padding: .25rem 0;
+    color: var(--fg-color);
+    font-weight: 700;
+    background-color: transparent;
+    border-bottom: .25rem solid transparent;
+}
+header a:hover, header a:focus {
+    border-bottom-color: var(--a-color);
+}
+header .active {
+    border-bottom-color: var(--fg-color);
+}
+header a + a {
+    margin-left: 1rem;
+}
+@media (max-width: 40rem) {
+    header {
+	justify-content: flex-start;
+	flex-direction: column;
+    }
+    header nav {
+	justify-content: flex-start;
+    }
 }
 
-.cover-container {
-    max-width: 42em;
-}
-
-
-/*
- * Main
- */
-
+/* Main */
 main h1 {
     margin: 2.5em 0 0.5em 0;
 }
-
 main h2 {
     margin: 1.5em 0 0.5em 0;
     font-weight: 300;
 }
-
-/*
- * Main: Header
- */
-
-/* same as .lead in bootstrap.min.css */
 .main_header p {
     font-size: 1.25rem;
     font-weight: 300;
 }
-
-
-/*
- * Main: Content
- */
-
 .main_content ul {
     padding: 0.5em 0.0em 0.5em 0.0em;
     list-style-type: none;
 }
-
 .main_content ol {
     padding: 0.5em 0.0em 0.5em 1.0em;
 }
-
 .main_content li {
     padding: 0.25em 0.0em;
 }
 
-
-/*
- * Header
- */
-.masthead {
-    margin-bottom: 2rem;
-}
-
-.masthead-brand {
-    margin-bottom: 0;
-}
-
-.nav-masthead .nav-link {
-    padding: .25rem 0;
-    font-weight: 700;
-    color: var(--masthead-color);
-    background-color: transparent;
-    border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-    border-bottom-color: var(--masthead-bb-color);
-}
-
-.nav-masthead .nav-link + .nav-link {
-    margin-left: 1rem;
-}
-
-.nav-masthead .active {
-    color: var(--masthead-ac-color);
-    border-bottom-color: var(--masthead-ac-bb-color);
-}
-
-@media (min-width: 48em) {
-    .masthead-brand {
-	float: left;
-    }
-    .nav-masthead {
-	float: right;
-    }
-}
-
-
-/*
- * Cover
- */
-.cover {
-    padding-top: 1.0em;
-}
-
-.cover .btn-lg {
-    font-weight: 700;
-}
-
-
-/*
- * Footer
- */
-.mastfoot {
+/* Footer */
+footer {
+    margin-bottom: 1.0em;
     padding-top: 3.0em;
-    color: var(--mastfoot-color);
-    text-align: center;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer nav {
+    margin-bottom: 0.5em;
+    flex-direction: row;
+}
+footer a + a {
+    margin-left: 1rem;
 }

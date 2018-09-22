@@ -1,16 +1,16 @@
 github.ioの個人ページ
 
 Done
-	* share/20180919asj_tts:
-	MP4ファイルの削除。
-	https://qiita.com/go_astrayer/items/6e39d3ab16ae8094496c
-	index.htmlを画像ファイルのみに修正。
-	
+	* src/template.html:
+	新しいtmp以下のテンプレートを利用。
+	古いbootstrapのいろいろは削除。
+	assets、dist。
 
 Now
 To Do
-	* CSV:
-	もっと簡単にしたい。javascriptも要らない。
+	* bootstrap-reboot.css:
+	page_style.cssにまとめるべきかも。
+	scssで一つのファイルを生成するようにする。
 	* 動画:
 	出版論文の動画は載せてみたい。
 	* 業績:
@@ -82,6 +82,14 @@ Future
 	そのままJekyllでやるのも良いし、
 	自分のコードをよくするために使っても良い。
 
+2018.09.22	d010
+	* share/20180919asj_tts:
+	MP4ファイルの削除。
+	https://qiita.com/go_astrayer/items/6e39d3ab16ae8094496c
+	index.htmlを画像ファイルのみに修正。
+	* tmp:
+	index.html, page_style.css。
+	bootstrap-reboot.cssのみを使ったテンプレート。
 2018.09.22	d009
 	* share/20180919asj_tts:
 	天文学会用動画サイト。

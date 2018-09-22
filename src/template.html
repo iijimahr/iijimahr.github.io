@@ -12,81 +12,57 @@
       H. Iijima | {% block title %}{% endblock %}
     </title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- Custom styles -->
+    <link href="css/bootstrap-reboot.min.css" rel="stylesheet">
     <link href="css/page_style.css" rel="stylesheet">
   </head>
 
   <!-- Body -->
   <body>
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <!-- Variables of navigation bar -->
+    {% set navigation_bar = [
+    ("index.html", "index", "Home"),
+    ("publications.html", "publications", "Publications"),
+    ("presentations.html", "presentations", "Presentations"),
+    ] -%}
+    {% set active_page = active_page|default('index') -%}
 
-      <!-- Variables of navigation bar -->
-      {% set navigation_bar = [
-      ("index.html", "index", "Home"),
-      ("publications.html", "publications", "Publications"),
-      ("presentations.html", "presentations", "Presentations"),
-      ] -%}
-      {% set active_page = active_page|default('index') -%}
+    <!-- Header -->
+    <header>
+      <h3>H. Iijima</h3>
+      <nav>
+	{% for href, id, caption in navigation_bar %}
+	<a {% if id == active_page %} class="active" {% endif %}
+	   href="{{ href|e }}">{{ caption|e }}</a>
+	{% endfor %}
+      </nav>
+    </header>
 
-      <!-- Header -->
-      <header class="masthead mb-auto">
-        <div class="inner">
-          <h3 class="masthead-brand">H. Iijima</h3>
-          <nav class="nav nav-masthead justify-content-center">
-	    {% for href, id, caption in navigation_bar %}
-	    <a {% if id == active_page %}
-	       class="nav-link active"
-	       {% else %}
-               class="nav-link"
-	       {% endif %}
-	       href="{{ href|e }}">{{ caption|e }}</a>
-	    {% endfor %}
-          </nav>
-        </div>
-      </header>
+    <!-- Main -->
+    <main role="main">
 
-      <!-- Main -->
-      <main role="main" class="inner cover">
+      <!-- Main: Title -->
+      <div class="main_header">
+	{% block main_header %}{% endblock %}
+      </div>
 
-	<!-- Main: Header -->
-	<div class="main_header">
-	  {% block main_header %}
-	  {% endblock %}
-	</div>
+      <!-- Main: Content -->
+      <div class="main_content">
+	{% block main_content %}{% endblock %}
+      </div>
 
-	<!-- Main: Content -->
-	<div class="main_content">
-	  {% block main_content %}
-	  {% endblock %}
-	</div>
+      <!-- Main: Back to top -->
+      <p style="text-align: right"><a href="#top">Back to top</a></p>
+    </main>
 
-	<!-- Main: Back to top -->
-	<p style="text-align: right"><a href="#top">Back to top</a></p>
-      </main>
-
-      <!-- Footer -->
-      <footer class="mastfoot mt-auto">
-        <div class="inner">
-          <nav class="nav justify-content-center">
-	    {% for href, id, caption in navigation_bar %}
-	    <a class="nav-link" href="{{ href|e }}">
-	      {{ caption|e }}
-	    </a>
-	    {% endfor %}
-          </nav>
-	  <p>&copy; 2017-2018 Haruhisa Iijima</p>
-        </div>
-      </footer>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="assets/js/vendor/popper.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
+    <!-- Footer -->
+    <footer>
+      <nav>
+	{% for href, id, caption in navigation_bar %}
+	<a href="{{ href|e }}">{{ caption|e }}</a>
+	{% endfor %}
+      </nav>
+      <p>&copy; 2017-2018 Haruhisa Iijima</p>
+    </footer>
   </body>
 </html>
