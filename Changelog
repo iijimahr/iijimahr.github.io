@@ -1,13 +1,6 @@
 github.ioの個人ページ
 
 Done
-	* src/template.html:
-	htmlにcssをインライン展開。
-	* favicon.svg:
-	GTmetrixでリクエストを2回してて、
-	何かと思ったらfaviconが無いと言われた。
-	data URIとしてtemplate.htmlに埋め込み。
-	念の為favicon.icoもルートに置いておく。
 
 Now
 To Do
@@ -97,6 +90,17 @@ Future
 	そのままJekyllでやるのも良いし、
 	自分のコードをよくするために使っても良い。
 
+2018.09.23	d012
+	* 一旦完成:
+	1ページづつのファーストビュー速度を追求。
+	GTMetrixで100%達成。
+	* src/template.html:
+	htmlにcssをインライン展開。
+	* favicon.svg:
+	GTmetrixでリクエストを2回してて、
+	何かと思ったらfaviconが無いと言われた。
+	data URIとしてtemplate.htmlに埋め込み。
+	念の為favicon.icoもルートに置いておく。
 2018.09.22	d011
 	* css/page_style.min.css:
 	bootstrap-reboot.min.cssとpage_style.cssをcatでまとめた。
