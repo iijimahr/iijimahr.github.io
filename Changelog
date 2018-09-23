@@ -91,10 +91,16 @@ Future
 	* 一旦完成:
 	1ページづつのファーストビュー速度を追求。
 	GTMetrixで100%達成。
-	W3Cチェックはスペースが無いって文句言われるけどしょうがない。
+	Page Speed Insightもモバイル100%、パソコン99%を達成。
+	パソコンはサーバーのレスポンスだから
+	サーバー変えるかCDN使わんと無理。
+	Pingdomでも100点。
+	W3Cチェックも問題なし。
 	* deploy.sh:
 	デプロイ用スクリプト。
 	テンプレートをコンパイルし、圧縮して、githubに上げる。
+	--remove-tag-whitespaceはW3Cチェックで
+	スペースが無いって文句言われるからやらない。
 	* compress_html.sh:
 	nodejsのhtml-minifierを使ってhtmlを圧縮。
 	* src/template.html:
