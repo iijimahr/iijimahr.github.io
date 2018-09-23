@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-cd src
-./compile_all.py
-cd -
+echo cd src; ./compile_all.py; cd -
+cd src; ./compile_all.py; cd -
 ./compress_html.sh
 ./update.sh
