@@ -2,5 +2,5 @@
 cd src
 ./compile_all.py
 cd -
-./compress_html.py
+./compress_html.sh
 ./update.sh
