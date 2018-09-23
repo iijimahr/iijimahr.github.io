@@ -6,7 +6,8 @@ Done
 	* favicon.svg:
 	GTmetrixでリクエストを2回してて、
 	何かと思ったらfaviconが無いと言われた。
-	SVGでdata URIとしてtemplate.htmlに埋め込み。
+	data URIとしてtemplate.htmlに埋め込み。
+	念の為favicon.icoもルートに置いておく。
 
 Now
 To Do
