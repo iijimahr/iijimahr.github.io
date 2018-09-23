@@ -94,8 +94,11 @@ Future
 	* 一旦完成:
 	1ページづつのファーストビュー速度を追求。
 	GTMetrixで100%達成。
+	* compress_html.sh:
+	nodejsのhtml-minifierを使ってhtmlを圧縮。
 	* src/template.html:
 	htmlにcssをインライン展開。
+	あとで圧縮するためcssをまとめるのはやめた。
 	* favicon.svg:
 	GTmetrixでリクエストを2回してて、
 	何かと思ったらfaviconが無いと言われた。
