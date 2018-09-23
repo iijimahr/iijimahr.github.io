@@ -31,9 +31,6 @@ To Do
 	PDFとHTMLを同時に生成できるようにしたい。
 	業績欄だけ同時生成でも良い。
 	ダウンロードボタンはbootstrapのボタンを使う。
-	* 共著論文:
-	横山先生
-	堀田さん
 	* 小さい研究会:
 	SGEPSSいれたっけ？
 	天文台のflux emergence ws
@@ -94,6 +91,10 @@ Future
 	* 一旦完成:
 	1ページづつのファーストビュー速度を追求。
 	GTMetrixで100%達成。
+	W3Cチェックはスペースが無いって文句言われるけどしょうがない。
+	* deploy.sh:
+	デプロイ用スクリプト。
+	テンプレートをコンパイルし、圧縮して、githubに上げる。
 	* compress_html.sh:
 	nodejsのhtml-minifierを使ってhtmlを圧縮。
 	* src/template.html:
