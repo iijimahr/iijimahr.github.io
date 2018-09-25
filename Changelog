@@ -1,6 +1,8 @@
 github.ioの個人ページ
 
 Done
+	* src/template.html:
+	コピーライトの色を薄く(#bbb)した。
 
 Now
 To Do
