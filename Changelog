@@ -5,6 +5,9 @@ Done
 	コピーライトの色を薄く(#bbb)した。
 
 Now
+	* src/publications_tpl.html
+	全対流層論文の更新。
+	一応正式にアクセプトの連絡が来てからアップデートすべきだろうか。
 To Do
 	* src/gallery_tpl.html:
 	出版論文の動画は載せてみたい。
