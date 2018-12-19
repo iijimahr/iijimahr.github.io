@@ -6,6 +6,10 @@ Done
 	* src/publications_tpl.html
 	全対流層論文の更新。
 	抑制法論文の更新。
+	* index_tpl.html:
+	メールアドレスのアットマークを
+	afterとcontentで隠した。
+	見た目キレイだしコピペもアットマーク以外可能だし良さそう。
 
 Now
 
