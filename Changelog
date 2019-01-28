@@ -1,19 +1,27 @@
 github.ioの個人ページ
 
 Done
-	* src/template.html:
-	コピーライトの色を薄く(#bbb)した。
-	* src/publications_tpl.html
-	全対流層論文の更新。
-	抑制法論文の更新。
-	* index_tpl.html:
-	メールアドレスのアットマークを
-	afterとcontentで隠した。
-	見た目キレイだしコピペもアットマーク以外可能だし良さそう。
 
 Now
 
 To Do
+	* src:
+	トップページはもっとシンプルでよいか。
+	画像を貼って派手にするのもあり。
+	その際にも、通信速度が遅くならないようにする。
+	* src:
+	PDFのCVもhtmlと同時生成したい。
+	やはりmarkdownで書いて変換するようにするべきか。
+	* src:
+	index、publicationsなどをcompile.pyで指定。
+	それで被コンパイルファイル・メニュー両方をコントロール。
+	* css/page_style.min.css:
+	scssで一つのファイルを生成するようにする。
+	* 業績:
+	CSVファイルから業績を出力したい。
+	HTMLに整形するpythonスクリプトを作成。
+	jsonファイルで管理するべきか。
+	googleスプレッドシートも捨てがたい。
 	* src/gallery_tpl.html:
 	出版論文の動画は載せてみたい。
 	論文ごとにするか、動画毎にするか。
@@ -26,21 +34,6 @@ To Do
 	その際はtemplate.htmlも編集。
 	BrandenburgのResearch Highlightとか参考にすべきか。
 	https://www.nordita.org/~brandenb/highlights/
-	* src:
-	index、publicationsなどをcompile.pyで指定。
-	それで被コンパイルファイル・メニュー両方をコントロール。
-	* css/page_style.min.css:
-	scssで一つのファイルを生成するようにする。
-	* 業績:
-	CSVファイルから業績を出力したい。
-	HTMLに整形するpythonスクリプトを作成。
-	* CV:
-	Contact detailsなど正式っぽいやつを作る。
-	* PDF版CV:
-	Employment/Curriculum_VitaeのPDF。
-	PDFとHTMLを同時に生成できるようにしたい。
-	業績欄だけ同時生成でも良い。
-	ダウンロードボタンはbootstrapのボタンを使う。
 	* 小さい研究会:
 	SGEPSSいれたっけ？
 	天文台のflux emergence ws
@@ -97,6 +90,18 @@ Future
 	そのままJekyllでやるのも良いし、
 	自分のコードをよくするために使っても良い。
 
+2019.01.28	d013
+	* src/template.html:
+	コピーライトの色を薄く(#bbb)した。
+	* src/publications_tpl.html
+	全対流層論文の更新。
+	抑制法論文の更新。
+	* src/index_tpl.html:
+	メールアドレスのアットマークを
+	afterとcontentで隠した。
+	見た目キレイだしコピペもアットマーク以外可能だし良さそう。
+	* src/presentations_tpl.html:
+	国内学会の招待講演を追加。
 2018.09.23	d012
 	* 一旦完成:
 	1ページづつのファーストビュー速度を追求。
