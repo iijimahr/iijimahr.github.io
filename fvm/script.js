@@ -122,10 +122,7 @@ function startAnimation(is_not_init) {
 	var data = [line1,line2];
 	var layout = {
 	    title:'1D Scalar Advection (time = ' + time.toFixed(2) + ')',
-	    yaxis: {range: [-0.1, 1.1]},
-	    autosize: false,
-            width:800,
-            height:500
+	    yaxis: {range: [-0.1, 1.1]}
 	};
 	Plotly.newPlot(id, data, layout);
     }
