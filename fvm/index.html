@@ -1,12 +1,71 @@
-<!-- body -->
-<div style="text-align: center; margin: 0 auto; width: 70%">
-  <div id="myGraph"></div>
-  # of grid:
-  <input type="number" value="10" id="input_inx" onchange="startAnimation(false);">
-  <br>
-  <input type="button" value="Run" onclick="startAnimation(true);">
-</div>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Learn finite volume method">
+    <meta name="author" content="H. Iijima">
 
-<!-- import javascript files -->
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script src="script.js"></script>
+    <!-- Title -->
+    <title>
+      Learn finite volume method
+    </title>
+
+    <!-- Custom styles -->
+    <style>
+      <link rel="stylesheet" href="../css/bootstrap-reboot.4.1.1.css">
+      <link rel="stylesheet" href="../css/page_style.css">
+    </style>
+  </head>
+
+  <!-- body -->
+  <body style="text-align: center; margin: 0 auto; width: 80%">
+
+    <!-- Header -->
+    <header>
+      <h3>
+	Learn finite volume method
+      </h3>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <div>
+	<div id="myGraph"></div>
+	<label for="input_inx">Number of grid:</label>
+	<input type="number" value="10" id="input_inx"
+	       onclick="startAnimation(false);">
+	<br>
+	<label for="input_init">Initial profile:</label>
+	<select id="input_init" name="initial profile"
+		onChange="startAnimation(false);">
+	  <option value="sin">Sin</option>
+	  <option value="box">Box</option>
+	</select>
+	<br>
+	<label for="input_rcnst">Reconstruction:</label>
+	<select id="input_rcnst" name="reconstruction"
+		onChange="startAnimation(false);">
+	  <option value="mm">Minmod limiter</option>
+	  <option value="mc">Monotonized Central limiter</option>
+	</select>
+	<br>
+	<label for="input_tinteg">Time integration:</label>
+	<select id="input_tinteg" name="time integration"
+		onChange="startAnimation(false);">
+	  <option value="euler1st">1st-order Euler method</option>
+	  <option value="ssprk22">2nd-order SSP Runge-Kutta method</option>
+	  <option value="ssprk33">3rd-order SSP Runge-Kutta method</option>
+	</select>
+	<br>
+	<input type="button" value="Run" onclick="startAnimation(true);">
+      </div>
+      <div id="log_text"></div>
+    </main>
+
+    <!-- import javascript files -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="script.js"></script>
+
+  </body>
+</html>
