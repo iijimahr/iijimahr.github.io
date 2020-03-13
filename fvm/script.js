@@ -117,7 +117,7 @@ function startAnimation(is_not_init) {
 	    x: x,
 	    y: y1,
 	    mode: 'lines+markers',
-	    name: 'Minmod'
+	    name: 'Numerical'
 	};
 	var line2 = {
 	    x: x,
