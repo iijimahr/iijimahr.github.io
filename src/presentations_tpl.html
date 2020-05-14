@@ -14,216 +14,93 @@ Presentations
 <!-- Presentations (international, invited) -->
 <h2>International Invited Talks</h2>
 <ol>
+  {% for dict_item in presentations %}
+  {% if 'en' in dict_item['Language'] %}
+  {% if 'invited' in dict_item['Invitation'] %}
+  {% if '0' != dict_item['Day'] %}
   <li>
-    H. Iijima,
-    "Effect of non-equilibrium ionization
-    on the solar EUV/X-ray spectral diagnosis",
-    Hinode-13/IPELS 2019,
-    2019, Tokyo, Japan
+    {{dict_item['Authors']}},
+    "{{dict_item['Title']}}",
+    {{dict_item['Meeting']}},
+    {{dict_item['Year']+'.'+dict_item['Month']+'.'+dict_item['Day']}},
+    {{dict_item['City']}},
+    {{dict_item['Country']}}
   </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "Radiation MHD Simulations on Solar Chromospheric Jets",
-    ASTRONUM-2018, the 13th International Conference
-    on Numerical Modeling of Space Plasma Flows,
-    2018, Panama City Beach, US
-  </li>
-  <li>
-    H. Iijima, H. Hotta, S. Imada, K. Kusano, and D. Shiota,
-    "Predicting the solar-cycle activity
-    based on the photospheric magnetic field",
-    Japan Geoscience Union Meeting,
-    2018, Chiba, Japan
-  </li>
-  <li>
-    H. Iijima,
-    "Numerical Simulations on the Regional Dependence
-    of Chromospheric Jets",
-    Joint Hinode-11/IRIS-8 Science Meeting,
-    2017, Seattle, US
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "3D simulation of chromospheric jets
-    with twisted magnetic field lines",
-    Solarnet IV Meeting,
-    2017, Lanzarote, Spain
-  </li>
+  {% endif %}
+  {% endif %}
+  {% endif %}
+  {% endfor %}
 </ol>
 
 <!-- Presentations (international, contributed) -->
 <h2>International Contributed Talks/Posters</h2>
 <ol>
+  {% for dict_item in presentations %}
+  {% if 'en' in dict_item['Language'] %}
+  {% if not 'invited' in dict_item['Invitation'] %}
+  {% if '0' != dict_item['Day'] %}
   <li>
-    H. Iijima,
-    "Energy-consistent finite difference method
-    for compressible magnetohydrodynamic simulations",
-    Japan Geoscience Union Meeting,
-    2020, Chiba, Japan (TBD)
+    {{dict_item['Authors']}},
+    "{{dict_item['Title']}}",
+    {{dict_item['Meeting']}},
+    {{dict_item['Year']+'.'+dict_item['Month']+'.'+dict_item['Day']}},
+    {{dict_item['City']}},
+    {{dict_item['Country']}}
+    {% if 'oral' in dict_item['Oral/Poster'] %}
+    (Talk)
+    {% else %}
+    (Poster)
+    {% endif %}
   </li>
-  <li>
-    H. Iijima, H. Hotta, and S. Imada,
-    "Impact of morphological asymmetry
-    in a sunspot group on the solar cycle prediction",
-    Japan Geoscience Union Meeting,
-    2020, Chiba, Japan (Poster)
-  </li>
-  <li>
-    H. Iijima, H. Hotta, and S. Imada,
-    "Importance of Morphological Asymmetry
-    between Leading and Following Sunspots
-    on Polar Field Formation and Cycle Prediction",
-    The 4th PSTEP International Symposium (PSTEP-4)
-    and the 2nd ISEE Symposium,
-    2020, Nagoya, Japan (Poster)
-  </li>
-  <li>
-    H. Iijima,
-    "Solar/Steller radiation from the viewpoint of radiative MHD simulation",
-    ISEE International Workshop:
-    International workshop on relations between solar evolution
-    and atmospheric escape from terrestrial planets,
-    2019, Nagoya, Japan (Talk)
-  </li>
-  <li>
-    H. Iijima,
-    "Estimation of turbulent pumping near the solar surface",
-    Flux Emergence Workshop 2019,
-    2019, Tokyo, Japan (Talk)
-  </li>
-  <li>
-    H. Iijima,
-    "Insight on chromosphere dynamics from numerical simulations
-    - Expected signatures of spicule formation and evolution",
-    DKIST Critical Science Plan Workshop,
-    2017, Nagoya, Japan (Talk)
-  </li>
-  <li>
-    H. Iijima, H. Hotta, S. Imada, K. Kusano, and D. Shiota,
-    "Plateau of polar field and cycle prediction",
-    Solar Cycle 25 Prediction Workshop,
-    2017, Nagoya, Japan (Talk)
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "Three-dimensional Simulation of Chromospheric Jets
-    with Twisted Magnetic Field Lines",
-    Hinode-10 Science Meeting, 2016, Nagoya, Japan (Talk)
-  </li>
-  <li>
-    H. Iijima, S. Imada, H. Hotta, D. Shiota, and K. Kusano,
-    "New Surface Flux Transport Code Based on the Yin-Yang grid",
-    Hinode-10 Science Meeting, 2016, Nagoya, Japan (Poster)
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "Three-dimensional simulation of chromospheric jets
-    with twisted chromospheric magnetic field lines",
-    IRIS-6: The Chromosphere, 2016, Stockholm, Sweden (Talk)
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "Effect of coronal conditions on solar chromospheric jets",
-    Workshop on Physics and Diagnostics of Emerging Flux Regions,
-    2015, Tokyo, Japan (Talk)
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "Effect of the coronal temperature on the formation
-    of the solar chromospheric jet",
-    Hinode-9 Science Meeting, 2015, Belfast, UK (Poster)
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "Two-dimensional simulation of chromospheric jet formation
-    with convection and emerging magnetic flux",
-    Flux Emergence Workshop, 2015, Colorado, US (Talk)
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "Two-dimensional simulation of the small scale structure
-    in the solar chromosphere", Japan Geoscience Union Meeting,
-    2015, Chiba, Japan (Talk)
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "Two-dimensional numerical study on
-    the supergranular-scale magneto-convective structure
-    near the photosphere in the solar quiet region",
-    ASTRONUM, 2014, California, US (Poster)
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "Two-dimensional numerical simulations
-    on the origin of network magnetic field
-    in the solar quiet region",
-    American Geoscience Union Fall Meeting,
-    2013, California, US (Poster)
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "Kinetic and magnetic power spectra
-    in the supergranular-scale convection
-    studied by three-dimensional radiative
-    magnetohydrodynamic simulations",
-    2013, Hinode-7 Science Meeting, Kyoto, Japan (Poster)
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "On the Origin of the Supergranulation
-    and the Magnetic Network in Solar Quiet Regions",
-    Japan Geoscience Union Meeting, 2013, Chiba, Japan (Talk)
-  </li>
-  <li>
-    H. Iijima and T. Yokoyama,
-    "The role of magnetic field on the scale
-    of solar surface convection",
-    Hinode-6 Science Meeting, 2012, St. Andreews, UK (Poster)
-  </li>
+  {% endif %}
+  {% endif %}
+  {% endif %}
+  {% endfor %}
 </ol>
 
 <!-- Presentations (domestic, invited talks) -->
 <h2>Domestic Invited Talks</h2>
 <ol>
+  {% for dict_item in presentations %}
+  {% if 'jp' in dict_item['Language'] %}
+  {% if 'invited' in dict_item['Invitation'] %}
+  {% if '0' != dict_item['Day'] %}
   <li>
-    飯島陽久, 「SUNRISE-DKIST-EUVSTと彩層・コロナモデリング」,
-    太陽研連シンポジウム「太陽研究の現状と将来展望」,
-    2019, 名古屋, 愛知
+    {{dict_item['Authors']}},
+    "{{dict_item['Title']}}",
+    {{dict_item['Meeting']}},
+    {{dict_item['Year']+'.'+dict_item['Month']+'.'+dict_item['Day']}},
+    {{dict_item['Place']}}
   </li>
+  {% endif %}
+  {% endif %}
+  {% endif %}
+  {% endfor %}
+</ol>
+
+<!-- Presentations (domestic, contributed) -->
+<h2>Domestic Contributed Talks/Posters</h2>
+<ol>
+  {% for dict_item in presentations %}
+  {% if 'jp' in dict_item['Language'] %}
+  {% if not 'invited' in dict_item['Invitation'] %}
+  {% if '0' != dict_item['Day'] %}
   <li>
-    飯島陽久, 「輻射MHDモデリングの現状と2020年代の展望」,
-    ワークショップ「SolarC_EUVST-SUNRISE-DKISTへの展望」,
-    2018, 三鷹, 東京
+    {{dict_item['Authors']}},
+    "{{dict_item['Title']}}",
+    {{dict_item['Meeting']}},
+    {{dict_item['Year']+'.'+dict_item['Month']+'.'+dict_item['Day']}},
+    {{dict_item['Place']}}
+    {% if 'oral' in dict_item['Oral/Poster'] %}
+    (Talk)
+    {% else %}
+    (Poster)
+    {% endif %}
   </li>
-  <li>
-    飯島陽久, 「EUVSTでスピキュールの何が知りたいか」,
-    太陽研連シンポジウム「太陽研究の将来展望」,
-    2018, 京都, 京都
-  </li>
-  <li>
-    飯島陽久, 今田晋亮, 堀田英之, 草野完也, 塩田大幸,
-    「太陽表面磁場を用いた次期太陽周期活動度予測」,
-    地球電磁気・地球惑星圏学会 第142回総会・講演会,
-    2017, 京都, 京都
-  </li>
-  <li>
-    飯島陽久,「輻射MHDモデリングから観測への期待」,
-    シンポジウム「スペース太陽研究の到達点と将来像」,
-    2016, 相模原, 神奈川
-  </li>
-  <li>
-    飯島陽久, 横山央明,
-    「数値モデリングからの彩層高空間分解能観測の必要性に関する検討」,
-    太陽研連シンポジウム
-    「ひので10年目の成果とSolar-Cを柱とする太陽研究の新展開」,
-    2016, 三鷹, 東京
-  </li>
-  <li>
-    飯島陽久, 横山央明, 「彩層ジェットの数値シミュレーション」,
-    太陽研連シンポジウム
-    「ひので10年目の成果とSolar-Cを柱とする太陽研究の新展開」,
-    2016, 三鷹, 東京
-  </li>
+  {% endif %}
+  {% endif %}
+  {% endif %}
+  {% endfor %}
 </ol>
 
 <!-- Presentations (Outreach) -->

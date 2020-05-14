@@ -6,6 +6,9 @@ Done
 	Yangさんの論文を追加。
 	* presentation_tpl:
 	Hinode-13の追加。
+	* 業績:
+	googleスプレッドシートから業績を出力。
+	スプレッドシートへのアクセスはセキュリティのためbitbucketで管理。
 
 Now
 
@@ -26,11 +29,6 @@ To Do
 	それで被コンパイルファイル・メニュー両方をコントロール。
 	* css/page_style.min.css:
 	scssで一つのファイルを生成するようにする。
-	* 業績:
-	CSVファイルから業績を出力したい。
-	HTMLに整形するpythonスクリプトを作成。
-	jsonファイルで管理するべきか。
-	googleスプレッドシートも捨てがたい。
 	* src/gallery_tpl.html:
 	出版論文の動画は載せてみたい。
 	論文ごとにするか、動画毎にするか。
