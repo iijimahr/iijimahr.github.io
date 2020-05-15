@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+
 ####
 #### read tabulated data
 ####
@@ -16,6 +17,14 @@ def read_table(fname):
             })
     return dicts
 
+
+####
+#### highlight my name
+####
+def highlight_me(names):
+    return names.replace('H. Iijima','<b>H. Iijima</b>')
+    
+
 ####
 #### compile html by the template engine Jinja2
 ####
@@ -23,13 +32,17 @@ def compile_html(fname):
     from jinja2 import Template, Environment, FileSystemLoader
 
     # read tabulated data
-    fname_tbl = 'presentations.pickle'
-    presentations = read_table(fname_tbl)
+    presentations = read_table('presentations.pickle')
+    publications = read_table('publications.pickle')
 
     # render HTML text
     env = Environment(loader=FileSystemLoader('.'), trim_blocks=False)
+    env.filters['highlight_me'] = highlight_me
     template = env.get_template(fname+'_tpl.html')
-    disp_text = template.render(presentations=presentations)
+    disp_text = template.render(
+        presentations=presentations,
+        publications=publications
+    )
 
     # output file
     f = open('../'+fname+'.html', 'w')
@@ -43,7 +56,3 @@ compile_html('index')
 compile_html('presentations')
 compile_html('publications')
 compile_html('gallery')
-
-# read tabulated data
-fname_tbl = 'presentations.pickle'
-presentations = read_table(fname_tbl)

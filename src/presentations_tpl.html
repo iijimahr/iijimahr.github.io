@@ -20,7 +20,7 @@ Presentations
   {% if '0' != dict_item['Day'] %}
   <li>
     {{dict_item['Authors']}},
-    "{{dict_item['Title']}}",
+    <i>"{{dict_item['Title']}}"</i>,
     {{dict_item['Meeting']}},
     {{dict_item['Year']+'.'+dict_item['Month']+'.'+dict_item['Day']}},
     {{dict_item['City']}},
@@ -41,7 +41,7 @@ Presentations
   {% if '0' != dict_item['Day'] %}
   <li>
     {{dict_item['Authors']}},
-    "{{dict_item['Title']}}",
+    <i>"{{dict_item['Title']}}"</i>,
     {{dict_item['Meeting']}},
     {{dict_item['Year']+'.'+dict_item['Month']+'.'+dict_item['Day']}},
     {{dict_item['City']}},
@@ -67,7 +67,7 @@ Presentations
   {% if '0' != dict_item['Day'] %}
   <li>
     {{dict_item['Authors']}},
-    "{{dict_item['Title']}}",
+    「{{dict_item['Title']}}」,
     {{dict_item['Meeting']}},
     {{dict_item['Year']+'.'+dict_item['Month']+'.'+dict_item['Day']}},
     {{dict_item['Place']}}
@@ -87,7 +87,7 @@ Presentations
   {% if '0' != dict_item['Day'] %}
   <li>
     {{dict_item['Authors']}},
-    "{{dict_item['Title']}}",
+    「{{dict_item['Title']}}」,
     {{dict_item['Meeting']}},
     {{dict_item['Year']+'.'+dict_item['Month']+'.'+dict_item['Day']}},
     {{dict_item['Place']}}
