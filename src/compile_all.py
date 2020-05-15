@@ -22,8 +22,11 @@ def read_table(fname):
 #### highlight my name
 ####
 def highlight_me(names):
-    return names.replace('H. Iijima','<b>H. Iijima</b>')
-    
+    return names.replace(
+        'H. Iijima','<b>H. Iijima</b>'
+    ).replace(
+        u'飯島陽久','<b>飯島陽久</b>'
+    )
 
 ####
 #### compile html by the template engine Jinja2
