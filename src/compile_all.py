@@ -19,6 +19,18 @@ def read_table(fname):
 
 
 ####
+#### sort list of dictionary by date
+####
+def sort_table(dicts):
+    sorted_dicts =sorted(
+        dicts,
+        key = lambda x: x['Year']+x['Month']+x['Day'],
+        reverse = True
+    )
+    return sorted_dicts
+
+
+####
 #### highlight my name
 ####
 def highlight_me(names):
@@ -35,8 +47,8 @@ def compile_html(fname):
     from jinja2 import Template, Environment, FileSystemLoader
 
     # read tabulated data
-    presentations = read_table('presentations.pickle')
-    publications = read_table('publications.pickle')
+    presentations = sort_table(read_table('presentations.pickle'))
+    publications = sort_table(read_table('publications.pickle'))
 
     # render HTML text
     env = Environment(loader=FileSystemLoader('.'), trim_blocks=False)
