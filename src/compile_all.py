@@ -24,7 +24,9 @@ def read_table(fname):
 def sort_table(dicts):
     sorted_dicts =sorted(
         dicts,
-        key = lambda x: x['Year']+x['Month']+x['Day'],
+        key = lambda x: (1.e4*float(x['Year']) 
+                         +1.e2*float(x['Month'])
+                         +float(x['Day'])),
         reverse = True
     )
     return sorted_dicts
