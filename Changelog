@@ -4,6 +4,7 @@ Done
 	* publications_tpl:
 	非対称性論文を追加。
 	Yangさんの論文を追加。
+	今田さん論文を追加。
 	* presentation_tpl:
 	Hinode-13の追加。
 	* 業績:
@@ -13,6 +14,9 @@ Done
 	日付による業績のソートを実施。
 
 Now
+	* all:
+	Jekyllでビルドできない。
+	ソースが入ってると厄介だし抜くか。
 
 To Do
 	* Grant:
