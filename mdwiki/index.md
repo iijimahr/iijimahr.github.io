@@ -41,28 +41,13 @@ Qiitaでいいじゃん的な部分はある。
 何があるだろ。マニュアルとか？
 
 
+## 気になる点
 
-## 機能のテスト
+なんか読み込みが遅い。
+スリムの方使うか。キャッシュ効くだろうし。
 
+Chromeでオフラインで見れないのも辛い。
+Markdownの編集自体はTypora等でやれば良いのだが。
 
-
-### 数式の表示
-
-Typoraの普通の記法はだめだった。
-
-
-
-### 画像ファイルの表示
-
-```markdown
-![stellar_conv](img/stellar_conv.jpg)
-```
-
-![stellar_conv](img/stellar_conv.jpg)
-
-```html
-<img src="img/stellar_conv.jpg"/>
-```
-
-<img src="img/stellar_conv.jpg"/>
-
+見せるだけならTyporaで作ってhtml出力してホストすれば良い気もする。
+やっぱり使い所が微妙かも。
