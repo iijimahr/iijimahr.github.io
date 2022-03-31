@@ -1,6 +1,4 @@
-# 画像ファイルの表示1
-
-![stellar_conv](img/stellar_conv.jpg)
+# 画像ファイルの表示(Markdown表記)
 
 ![stellar_conv](../img/stellar_conv.jpg)
 

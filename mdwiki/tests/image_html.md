@@ -1,6 +1,4 @@
-# 画像ファイルの表示(HTMLタグの利用)
+# 画像ファイルの表示(HTML表記)
 
-<img src="../img/stellar_conv.jpg" alt="img1"/>
-
-<img src="../img/stellar_conv.jpg" alt="img2"/>
+<img src="../img/stellar_conv.jpg"/>
 
