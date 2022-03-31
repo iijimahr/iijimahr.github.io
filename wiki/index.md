@@ -1,16 +1,72 @@
-# H1 title
+# 書物するためのwiki
 
-## H2 title 1
 
-### H3 title 1
 
-### H3 title 2
+## 用途: 考え中
 
-## H2 title 2
+### 案1: ブログ
 
-### H3 title 1
+まずこれが思いつく。
 
-this is the main body
+楽だし。
 
-### H3 title 2
+ただ日付で勝手にindexingしてくれないのがちょっと。
+
+自分でディレクトリ内をサーチしてblog/index.mdに書けばよいのかも。
+
+
+
+### 案2: Qiita的なTips
+
+Qiitaでいいじゃん的な部分はある。
+
+
+
+### 案3: マニュアル・コード
+
+コードのホストも出来るのだろうか。
+
+でも公開していいコードなら公開ディレクトリにおけばいいが。
+だめなコードでもwebでマニュアル見れると便利かもしれない。
+
+ただ、マニュアルをjupyterにするならあんまり良いことないか？
+ちゃんとしたコードならread-the-docsで良いし。
+
+公開コード(かつ小規模でwiki構造が複雑にならない)ならGithub Wikiのが良い可能性も。
+
+
+
+### 案4: 特にカテゴリなく突発的に人に共有したいドキュメント
+
+何があるだろ。マニュアルとか？
+
+
+
+## 機能のテスト
+
+
+
+### 数式の表示
+
+$$
+\int_0^\infty f(x) = \frac{1}{2}x^2
+$$
+
+
+
+
+
+### 画像ファイルの表示
+
+```markdown
+![stellar_conv](img/stellar_conv.jpg)
+```
+
+![stellar_conv](img/stellar_conv.jpg)
+
+```html
+<img src="img/stellar_conv.jpg"/>
+```
+
+<img src="img/stellar_conv.jpg"/>
 
