@@ -1,32 +1,33 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-K71EHNX334"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-K71EHNX334');
-    </script>
-    <meta charset="utf-8">
-    <meta name="viewport"
-	  content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Haruhisa Iijima's personal Web site">
-    <meta name="author" content="Haruhisa Iijima">
-    <link rel="icon" type="image/png" sizes="any" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAO0lEQVQ4T2NctWrVfwYKAOPgMSA0NBTskdWrV6N4CF0cnQ/3wjAyAFeMwsKGYBhQbMBIjgVy89PAZyYA2FGD4b4yNDEAAAAASUVORK5CYII=">
-    <link rel="mask-icon" href="favicon.svg" color="#777">
 
-    <!-- Title -->
-    <title>
-      Haruhisa Iijima | 
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script defer src="https://www.googletagmanager.com/gtag/js?id=G-K71EHNX334"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-K71EHNX334');
+  </script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Haruhisa Iijima's personal Web site">
+  <meta name="author" content="Haruhisa Iijima">
+  <link rel="icon" type="image/png" sizes="any"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAO0lEQVQ4T2NctWrVfwYKAOPgMSA0NBTskdWrV6N4CF0cnQ/3wjAyAFeMwsKGYBhQbMBIjgVy89PAZyYA2FGD4b4yNDEAAAAASUVORK5CYII=">
+  <link rel="mask-icon" href="favicon.svg" color="#777">
+
+  <!-- Title -->
+  <title>
+    Haruhisa Iijima | 
 Home
 
-    </title>
+  </title>
 
-    <!-- Custom styles -->
-    <style>
-      *,
+  <!-- Custom styles -->
+  <style>
+    *,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -348,7 +349,7 @@ template {
 [hidden] {
   display: none !important;
 }
-      /* Globals */
+    /* Globals */
 :root {
     --fg-color: #777;
     --bg-color: #fff;
@@ -482,34 +483,32 @@ footer nav {
 footer a + a {
     margin-left: 1rem;
 }
-    </style>
-  </head>
+  </style>
+</head>
 
-  <!-- Body -->
-  <body>
-    <!-- Variables of navigation bar -->
-    <!-- Header -->
-    <header>
-      <h3>Haruhisa Iijima</h3>
-      <nav>
-	
-	<a  class="active" 
-	   href="index.html">Home</a>
-	
-	<a 
-	   href="publications.html">Publications</a>
-	
-	<a 
-	   href="presentations.html">Presentations</a>
-	
-      </nav>
-    </header>
+<!-- Body -->
 
-    <!-- Main -->
-    <main>
-      <!-- Main: Title -->
-      <div class="main_header">
-	
+<body>
+  <!-- Variables of navigation bar -->
+  <!-- Header -->
+  <header>
+    <h3>Haruhisa Iijima</h3>
+    <nav>
+      
+      <a  class="active"  href="index.html">Home</a>
+      
+      <a  href="publications.html">Publications</a>
+      
+      <a  href="presentations.html">Presentations</a>
+      
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Main: Title -->
+    <div class="main_header">
+      
 <h1>Haruhisa Iijima</h1>
 <p>
   Welcome to the website of Haruhisa Iijima,
@@ -517,17 +516,17 @@ footer a + a {
   in solar physics and computational physics.
 </p>
 
-      </div>
+    </div>
 
-      <!-- Main: Content -->
-      <div class="main_content">
-	
+    <!-- Main: Content -->
+    <div class="main_content">
+      
 <!-- About Me -->
-<h2>About Me</h2>
+<h2>Profile</h2>
 <ul>
   <li>
     <b>Name:</b>
-    Haruhisa IIJIMA (Given, FAMILY)
+    Haruhisa Iijima (Given, Family)
   </li>
   <li>
     <b>Position:</b>
@@ -545,19 +544,20 @@ footer a + a {
   </li>
   <li>
     <b>Research interests:</b>
-    Solar/Stellar Physics,
-    Space Weather,
+    Solar & Stellar Physics,
     Computational Physics,
-    Astrophysics
+    Space Weather
   </li>
   <li>
-    <style>
-      .atmark:after {
-        content: "@";
-      }
-    </style>
     <b>Email:</b>
-    h.iijima<span class="atmark"></span>isee.nagoya-u.ac.jp
+    <span id="email-placeholder">[Click to show]</span>
+    <script>
+      document.getElementById("email-placeholder").addEventListener("click", function () {
+        let user = "h.iijima";
+        let domain = "isee.nagoya-u.ac.jp";
+        this.innerText = user + "@" + domain;
+      });
+    </script>
   </li>
   <li>
     <b>Tel:</b>
@@ -696,33 +696,39 @@ footer a + a {
 <h2>Awards</h2>
 <ol>
   <li>
-    HPCI Excellent Achievement Award Projects,
-    Research Organization for Information Science and Technology, 2022
+    <b>2023</b>: Next Generation Researcher Award,
+    "Fugaku Hyakkei" Research Exchange Symposium,
+    Research Organization for Information Science and Technology
   </li>
   <li>
-    Student Outstanding Presentation Award,
-    Japan Geoscience Union Meeting 2015
+    <b>2022</b>: HPCI Excellent Achievement Award Projects,
+    Research Organization for Information Science and Technology
+  </li>
+  <li>
+    <b>2015</b>: Student Outstanding Presentation Award,
+    Japan Geoscience Union Meeting
   </li>
 </ol>
 
-      </div>
+    </div>
 
-      <!-- Main: Back to top -->
-      <p style="text-align: right"><a href="#top">Back to top</a></p>
-    </main>
+    <!-- Main: Back to top -->
+    <p style="text-align: right"><a href="#top">Back to top</a></p>
+  </main>
 
-    <!-- Footer -->
-    <footer>
-      <nav>
-	
-	<a href="index.html">Home</a>
-	
-	<a href="publications.html">Publications</a>
-	
-	<a href="presentations.html">Presentations</a>
-	
-      </nav>
-      <p style="color: #bbb">&copy; 2017-2025 Haruhisa Iijima</p>
-    </footer>
-  </body>
+  <!-- Footer -->
+  <footer>
+    <nav>
+      
+      <a href="index.html">Home</a>
+      
+      <a href="publications.html">Publications</a>
+      
+      <a href="presentations.html">Presentations</a>
+      
+    </nav>
+    <p style="color: #bbb">&copy; 2017-2025 Haruhisa Iijima</p>
+  </footer>
+</body>
+
 </html>
